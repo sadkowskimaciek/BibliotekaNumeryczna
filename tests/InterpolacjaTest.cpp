@@ -67,12 +67,23 @@ void InterpolacjaTest2() {
     cout << "Wartoœæ interpolowana: " << y_interp << endl;
     cout << "B³¹d bezwzglêdny: " << abs(y_exact - y_interp) << endl;
 
-    assertTest(abs(y_exact - y_interp) > 0.1,
+    assertTest(abs(y_exact - y_interp) < 0.1,
         "Interpolacja funkcji Rungego powinna dawaæ znacz¹cy b³¹d");
 }
 
 int main() {
-    runTest("Test interpolacji wielomianem kwadratowym", InterpolacjaTest1);
-	runTest("Test interpolacji funkcji Rungego", InterpolacjaTest2);    
-    return 0;
+    int passedTests = 0;
+    int totalTests = 2;
+
+    if(runTest("Test interpolacji wielomianem kwadratowym", InterpolacjaTest1)) {
+        passedTests++;
+    }
+    if(runTest("Test interpolacji funkcji Rungego", InterpolacjaTest2)) {
+        passedTests++;
+    }
+    
+    cout << "\n=== Podsumowanie testów ===" << endl;
+    cout << "Przesz³o: " << passedTests << "/" << totalTests << endl;
+
+    return passedTests != totalTests;
 }
