@@ -29,7 +29,7 @@ bool runTest(const string& testName, void (*testFunction)()) {
     }
 }
 
-void InterpolacjaTest1() {
+void InterpolationTest1() {
     vector<double> x = { -1, 0, 1 };
     vector<double> y = { 1, 0, 1 }; 
 
@@ -46,7 +46,7 @@ void InterpolacjaTest1() {
         "B³¹d interpolacji w punkcie x = 0.5");
 }
 
-void InterpolacjaTest2() {
+void InterpolationTest2() {
     vector<double> x;
     vector<double> y;
     int n = 15; 
@@ -75,10 +75,10 @@ int main() {
     int passedTests = 0;
     int totalTests = 2;
 
-    if(runTest("Test interpolacji wielomianem kwadratowym", InterpolacjaTest1)) {
+    if(runTest("Test interpolacji wielomianem kwadratowym", InterpolationTest1)) {
         passedTests++;
     }
-    if(runTest("Test interpolacji funkcji Rungego", InterpolacjaTest2)) {
+    if(runTest("Test interpolacji funkcji Rungego", InterpolationTest2)) {
         passedTests++;
     }
     
