@@ -1,4 +1,4 @@
-#include "../include/Interpolacja.h"
+#include "../include/numlib/Interpolacja.h"
 
 double Horner(int n, double x, vector<double>& A) {
     double result = A[n];
