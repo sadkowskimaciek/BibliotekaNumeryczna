@@ -21,7 +21,9 @@ namespace numlib {
         cout << "Macierz początkowa:" << endl;
         printMatrix(A, b);
 
+        // Etap 1: Eliminacja współczynników (eliminacja w przód)
         for (int k = 0; k < n - 1; k++) {
+            // Wybór elementu głównego (pivot)
             int pivot_row = k;
             double pivot_value = abs(A[k][k]);
 
@@ -32,6 +34,7 @@ namespace numlib {
                 }
             }
 
+            // Zamiana wierszy jeśli znaleziono lepszy element główny
             if (pivot_row != k) {
                 for (int j = k; j < n; j++) {
                     swap(A[k][j], A[pivot_row][j]);
@@ -39,13 +42,15 @@ namespace numlib {
                 swap(b[k], b[pivot_row]);
             }
 
+            // Sprawdzenie osobliwości macierzy
             if (abs(A[k][k]) < 1e-10) {
                 cout << "Macierz osobliwa - brak rozwiązania" << endl;
                 return vector<double>(n, 0.0);
             }
 
+            // Eliminacja współczynników w kolumnie
             for (int i = k + 1; i < n; i++) {
-                double factor = A[i][k] / A[k][k];
+                double factor = A[i][k] / A[k][k];  // Mnożnik eliminacyjny
 
                 for (int j = k; j < n; j++) {
                     A[i][j] -= factor * A[k][j];
@@ -57,16 +62,20 @@ namespace numlib {
             printMatrix(A, b);
         }
 
+        // Etap 2: Podstawianie wsteczne
         vector<double> x(n, 0.0);
 
+        // Sprawdzenie czy ostatni element na przekątnej nie jest zerem
         if (abs(A[n - 1][n - 1]) < 1e-10) {
             cout << "Błąd: Dzielenie przez zero podczas podstawiania wstecznego" << endl;
             return vector<double>(n, 0.0);
         }
 
+        // Obliczenie ostatniej niewiadomej
         x[n - 1] = b[n - 1] / A[n - 1][n - 1];
         cout << "x[" << n - 1 << "] = " << x[n - 1] << endl;
 
+        // Obliczenie pozostałych niewiadomych
         for (int i = n - 2; i >= 0; i--) {
             double sum = 0.0;
             for (int j = i + 1; j < n; j++) {
@@ -76,6 +85,7 @@ namespace numlib {
             cout << "x[" << i << "] = " << x[i] << endl;
         }
 
+        // Etap 3: Weryfikacja rozwiązania
         cout << "\nSprawdzenie rozwiązania:" << endl;
         for (int i = 0; i < n; i++) {
             double check = 0.0;
