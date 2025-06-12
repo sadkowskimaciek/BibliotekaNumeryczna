@@ -33,11 +33,11 @@ Biblioteka Numeryczna implementująca wybrane metody obliczeniowe numeryczne w j
 
 ## Instalacja
 
--Skopiuj pliki do folderu
--Stwórz folder "build"
--Przejdź do folder "build" i wpisz "make .." w terminalu
--Następnie wpisz "cmake --build . --config Debug"
--Projekt powinien zostać zbudowany
+- Skopiuj pliki do folderu
+- Stwórz folder "build"
+- Przejdź do folder "build" i wpisz "make .." w terminalu
+- Następnie wpisz "cmake --build . --config Debug"
+- Projekt powinien zostać zbudowany
 
 ## Przykłady użycia
 
@@ -205,7 +205,7 @@ int main() {
 
 ### Uruchomienie testów
 
--ctest -C Debug
+- ctest -C Debug
 
 ### Kompilacja przykładów
 
