@@ -1,0 +1,14 @@
+"C:\Program Files\JetBrains\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3.5/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\Maciek\CLionProjects\BibliotekaNumeryczna_1 -B C:\Users\Maciek\CLionProjects\BibliotekaNumeryczna_1\cmake-build-debug
+-- Configuring done (0.3s)
+CMake Warning (dev) at CMakeLists.txt:7 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/src/RownaniaNieLiniowe.cpp
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/cmake-build-debug

@@ -1,0 +1,8 @@
+C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/cmake-build-debug/CMakeFiles/BibliotekaNumeryczna.dir
+C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/cmake-build-debug/CMakeFiles/RownaniaLinioweTest.dir
+C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/cmake-build-debug/CMakeFiles/InterpolacjaTest.dir
+C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/cmake-build-debug/CMakeFiles/RownaniaRozniczkoweTest.dir
+C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/cmake-build-debug/CMakeFiles/AproksymacjaTest.dir
+C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/cmake-build-debug/CMakeFiles/test.dir
+C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

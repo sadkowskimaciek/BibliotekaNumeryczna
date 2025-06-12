@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BibliotekaNumeryczna",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AproksymacjaTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AproksymacjaTest-Debug-b61f61cd52ce4eea8480.json",
+					"name" : "AproksymacjaTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BibliotekaNumeryczna::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BibliotekaNumeryczna-Debug-1d5ef1e4fc9b7e913fed.json",
+					"name" : "BibliotekaNumeryczna",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "InterpolacjaTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-InterpolacjaTest-Debug-45b2b4ede33452391ffd.json",
+					"name" : "InterpolacjaTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RownaniaLinioweTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RownaniaLinioweTest-Debug-95750a84f322cec5d611.json",
+					"name" : "RownaniaLinioweTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RownaniaRozniczkoweTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RownaniaRozniczkoweTest-Debug-d4b4d9847af641ee9f79.json",
+					"name" : "RownaniaRozniczkoweTest",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/cmake-build-debug",
+		"source" : "C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

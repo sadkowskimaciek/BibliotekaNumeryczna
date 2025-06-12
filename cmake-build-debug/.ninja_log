@@ -1,0 +1,25 @@
+# ninja log v6
+40	1174	7714427643448619	CMakeFiles/BibliotekaNumeryczna.dir/src/Interpolacja.cpp.obj	215b5255b072cd75
+1175	3093	7714427654800447	CMakeFiles/BibliotekaNumeryczna.dir/src/Aproksymacja.cpp.obj	58164ef3085bedb1
+39	438	7714419348123162	CMakeFiles/AproksymacjaTest.dir/example/AproksymacjaPrzyklad.cpp.obj	87415ae35c539930
+1622	2907	7714427659271187	CMakeFiles/AproksymacjaTest.dir/tests/AproksymacjaTest.cpp.obj	58f3e488fd094ae1
+1442	1622	7714427657475477	CMakeFiles/BibliotekaNumeryczna.dir/src/Calkowanie.cpp.obj	cba919d1733d6e6f
+9	1442	7714427643148513	CMakeFiles/BibliotekaNumeryczna.dir/src/RownaniaLiniowe.cpp.obj	b108b3c9b2309384
+5	653	7714428132950718	build.ninja	fdc247a238df46e
+102	1510	7714427644074342	CMakeFiles/BibliotekaNumeryczna.dir/src/RownaniaRozniczkowe.cpp.obj	4ebbe81a227e5420
+1514	1689	7714427658191640	CMakeFiles/BibliotekaNumeryczna.dir/src/RownaniaNieLiniowe.cpp.obj	d782b149d36ec1cc
+3093	3929	7714427673982523	libBibliotekaNumeryczna.a	ead2309789342cd2
+3929	4692	7714427682349361	AproksymacjaTest.exe	abe2cc3cab9aaed
+4	513	7714428132950718	build.ninja	fdc247a238df46e
+12	1483	7714428905504642	CMakeFiles/AproksymacjaTest.dir/tests/AproksymacjaTest.cpp.obj	58f3e488fd094ae1
+1484	2141	7714428920222580	AproksymacjaTest.exe	abe2cc3cab9aaed
+11	1729	7714430249476360	CMakeFiles/AproksymacjaTest.dir/tests/AproksymacjaTest.cpp.obj	58f3e488fd094ae1
+1730	2423	7714430266668269	AproksymacjaTest.exe	abe2cc3cab9aaed
+10	1624	7714430492662594	CMakeFiles/AproksymacjaTest.dir/tests/AproksymacjaTest.cpp.obj	58f3e488fd094ae1
+1624	2315	7714430508799554	AproksymacjaTest.exe	abe2cc3cab9aaed
+12	1450	7714431959726013	CMakeFiles/AproksymacjaTest.dir/tests/AproksymacjaTest.cpp.obj	58f3e488fd094ae1
+1451	2128	7714431974114858	AproksymacjaTest.exe	abe2cc3cab9aaed
+18	1759	7714432294395478	CMakeFiles/AproksymacjaTest.dir/tests/AproksymacjaTest.cpp.obj	58f3e488fd094ae1
+1760	2419	7714432311817699	AproksymacjaTest.exe	abe2cc3cab9aaed
+13	1507	7714433315784567	CMakeFiles/AproksymacjaTest.dir/tests/AproksymacjaTest.cpp.obj	58f3e488fd094ae1
+1508	2247	7714433330733033	AproksymacjaTest.exe	abe2cc3cab9aaed
