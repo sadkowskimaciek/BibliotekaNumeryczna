@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "InterpolacjaTest.exe"
+			"path" : "RownaniaNieLinioweTest.exe"
 		},
 		{
-			"path" : "InterpolacjaTest.pdb"
+			"path" : "RownaniaNieLinioweTest.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 27,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 28,
+				"line" : 29,
 				"parent" : 0
 			}
 		]
@@ -77,7 +77,7 @@
 			"id" : "BibliotekaNumeryczna::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "InterpolacjaTest::@6890427a1f51a3e7e1df",
+	"id" : "RownaniaNieLinioweTest::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -102,8 +102,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "InterpolacjaTest",
-	"nameOnDisk" : "InterpolacjaTest.exe",
+	"name" : "RownaniaNieLinioweTest",
+	"nameOnDisk" : "RownaniaNieLinioweTest.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -124,7 +124,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/InterpolacjaTest.cpp",
+			"path" : "tests/RownaniaNieLinioweTest.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

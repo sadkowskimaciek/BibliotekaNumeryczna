@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "AproksymacjaTest.exe"
+			"path" : "RownaniaRozniczkoweTest.exe"
 		},
 		{
-			"path" : "AproksymacjaTest.pdb"
+			"path" : "RownaniaRozniczkoweTest.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -77,7 +77,7 @@
 			"id" : "BibliotekaNumeryczna::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "AproksymacjaTest::@6890427a1f51a3e7e1df",
+	"id" : "RownaniaRozniczkoweTest::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -102,8 +102,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "AproksymacjaTest",
-	"nameOnDisk" : "AproksymacjaTest.exe",
+	"name" : "RownaniaRozniczkoweTest",
+	"nameOnDisk" : "RownaniaRozniczkoweTest.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -124,7 +124,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/AproksymacjaTest.cpp",
+			"path" : "tests/RownaniaRozniczkoweTest.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

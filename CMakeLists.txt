@@ -11,6 +11,7 @@ add_library(BibliotekaNumeryczna STATIC
     src/Aproksymacja.cpp
     src/Calkowanie.cpp
     src/RownaniaNieLiniowe.cpp
+
 )
 
 target_include_directories(BibliotekaNumeryczna PUBLIC
@@ -23,6 +24,10 @@ enable_testing()
 add_executable(RownaniaLinioweTest tests/RownaniaLinioweTest.cpp)
 target_link_libraries(RownaniaLinioweTest PRIVATE BibliotekaNumeryczna)
 add_test(NAME RownaniaLinioweTest COMMAND RownaniaLinioweTest)
+
+add_executable(RownaniaNieLinioweTest tests/RownaniaNieLinioweTest.cpp)
+target_link_libraries(RownaniaNieLinioweTest PRIVATE BibliotekaNumeryczna)
+add_test(NAME RownaniaNieLinioweTest COMMAND RownaniaNieLinioweTest)
 
 add_executable(InterpolacjaTest tests/InterpolacjaTest.cpp)
 target_link_libraries(InterpolacjaTest PRIVATE BibliotekaNumeryczna)
@@ -41,3 +46,7 @@ add_test(NAME AproksymacjaTest COMMAND AproksymacjaTest)
 add_executable(CalkowanieTest tests/CalkowanieTest.cpp)
 target_link_libraries(CalkowanieTest PRIVATE BibliotekaNumeryczna)
 add_test(NAME CalkowanieTest COMMAND CalkowanieTest)
+
+add_executable(AproksymacjaPrzyklad example/AproksymacjaPrzyklad.cpp)
+target_link_libraries(AproksymacjaPrzyklad PRIVATE BibliotekaNumeryczna)
+

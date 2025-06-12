@@ -142,6 +142,40 @@ build RownaniaLinioweTest.exe: CXX_EXECUTABLE_LINKER__RownaniaLinioweTest_Debug 
   TARGET_PDB = RownaniaLinioweTest.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target RownaniaNieLinioweTest
+
+
+#############################################
+# Order-only phony target for RownaniaNieLinioweTest
+
+build cmake_object_order_depends_target_RownaniaNieLinioweTest: phony || cmake_object_order_depends_target_BibliotekaNumeryczna
+
+build CMakeFiles/RownaniaNieLinioweTest.dir/tests/RownaniaNieLinioweTest.cpp.obj: CXX_COMPILER__RownaniaNieLinioweTest_unscanned_Debug C$:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/tests/RownaniaNieLinioweTest.cpp || cmake_object_order_depends_target_RownaniaNieLinioweTest
+  DEP_FILE = CMakeFiles\RownaniaNieLinioweTest.dir\tests\RownaniaNieLinioweTest.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/include
+  OBJECT_DIR = CMakeFiles\RownaniaNieLinioweTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\RownaniaNieLinioweTest.dir\tests
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target RownaniaNieLinioweTest
+
+
+#############################################
+# Link the executable RownaniaNieLinioweTest.exe
+
+build RownaniaNieLinioweTest.exe: CXX_EXECUTABLE_LINKER__RownaniaNieLinioweTest_Debug CMakeFiles/RownaniaNieLinioweTest.dir/tests/RownaniaNieLinioweTest.cpp.obj | libBibliotekaNumeryczna.a || libBibliotekaNumeryczna.a
+  FLAGS = -g
+  LINK_LIBRARIES = libBibliotekaNumeryczna.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\RownaniaNieLinioweTest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = RownaniaNieLinioweTest.exe
+  TARGET_IMPLIB = libRownaniaNieLinioweTest.dll.a
+  TARGET_PDB = RownaniaNieLinioweTest.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target InterpolacjaTest
 
 
@@ -243,6 +277,74 @@ build AproksymacjaTest.exe: CXX_EXECUTABLE_LINKER__AproksymacjaTest_Debug CMakeF
   TARGET_IMPLIB = libAproksymacjaTest.dll.a
   TARGET_PDB = AproksymacjaTest.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target CalkowanieTest
+
+
+#############################################
+# Order-only phony target for CalkowanieTest
+
+build cmake_object_order_depends_target_CalkowanieTest: phony || cmake_object_order_depends_target_BibliotekaNumeryczna
+
+build CMakeFiles/CalkowanieTest.dir/tests/CalkowanieTest.cpp.obj: CXX_COMPILER__CalkowanieTest_unscanned_Debug C$:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/tests/CalkowanieTest.cpp || cmake_object_order_depends_target_CalkowanieTest
+  DEP_FILE = CMakeFiles\CalkowanieTest.dir\tests\CalkowanieTest.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/include
+  OBJECT_DIR = CMakeFiles\CalkowanieTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\CalkowanieTest.dir\tests
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CalkowanieTest
+
+
+#############################################
+# Link the executable CalkowanieTest.exe
+
+build CalkowanieTest.exe: CXX_EXECUTABLE_LINKER__CalkowanieTest_Debug CMakeFiles/CalkowanieTest.dir/tests/CalkowanieTest.cpp.obj | libBibliotekaNumeryczna.a || libBibliotekaNumeryczna.a
+  FLAGS = -g
+  LINK_LIBRARIES = libBibliotekaNumeryczna.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\CalkowanieTest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = CalkowanieTest.exe
+  TARGET_IMPLIB = libCalkowanieTest.dll.a
+  TARGET_PDB = CalkowanieTest.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target AproksymacjaPrzyklad
+
+
+#############################################
+# Order-only phony target for AproksymacjaPrzyklad
+
+build cmake_object_order_depends_target_AproksymacjaPrzyklad: phony || cmake_object_order_depends_target_BibliotekaNumeryczna
+
+build CMakeFiles/AproksymacjaPrzyklad.dir/example/AproksymacjaPrzyklad.cpp.obj: CXX_COMPILER__AproksymacjaPrzyklad_unscanned_Debug C$:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/example/AproksymacjaPrzyklad.cpp || cmake_object_order_depends_target_AproksymacjaPrzyklad
+  DEP_FILE = CMakeFiles\AproksymacjaPrzyklad.dir\example\AproksymacjaPrzyklad.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/include
+  OBJECT_DIR = CMakeFiles\AproksymacjaPrzyklad.dir
+  OBJECT_FILE_DIR = CMakeFiles\AproksymacjaPrzyklad.dir\example
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target AproksymacjaPrzyklad
+
+
+#############################################
+# Link the executable AproksymacjaPrzyklad.exe
+
+build AproksymacjaPrzyklad.exe: CXX_EXECUTABLE_LINKER__AproksymacjaPrzyklad_Debug CMakeFiles/AproksymacjaPrzyklad.dir/example/AproksymacjaPrzyklad.cpp.obj | libBibliotekaNumeryczna.a || libBibliotekaNumeryczna.a
+  FLAGS = -g
+  LINK_LIBRARIES = libBibliotekaNumeryczna.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\AproksymacjaPrzyklad.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = AproksymacjaPrzyklad.exe
+  TARGET_IMPLIB = libAproksymacjaPrzyklad.dll.a
+  TARGET_PDB = AproksymacjaPrzyklad.exe.dbg
+
 
 #############################################
 # Utility command for test
@@ -281,13 +383,19 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build AproksymacjaPrzyklad: phony AproksymacjaPrzyklad.exe
+
 build AproksymacjaTest: phony AproksymacjaTest.exe
 
 build BibliotekaNumeryczna: phony libBibliotekaNumeryczna.a
 
+build CalkowanieTest: phony CalkowanieTest.exe
+
 build InterpolacjaTest: phony InterpolacjaTest.exe
 
 build RownaniaLinioweTest: phony RownaniaLinioweTest.exe
+
+build RownaniaNieLinioweTest: phony RownaniaNieLinioweTest.exe
 
 build RownaniaRozniczkoweTest: phony RownaniaRozniczkoweTest.exe
 
@@ -299,7 +407,7 @@ build RownaniaRozniczkoweTest: phony RownaniaRozniczkoweTest.exe
 #############################################
 # Folder: C:/Users/Maciek/CLionProjects/BibliotekaNumeryczna_1/cmake-build-debug
 
-build all: phony libBibliotekaNumeryczna.a RownaniaLinioweTest.exe InterpolacjaTest.exe RownaniaRozniczkoweTest.exe AproksymacjaTest.exe
+build all: phony libBibliotekaNumeryczna.a RownaniaLinioweTest.exe RownaniaNieLinioweTest.exe InterpolacjaTest.exe RownaniaRozniczkoweTest.exe AproksymacjaTest.exe CalkowanieTest.exe AproksymacjaPrzyklad.exe
 
 # =============================================================================
 # Built-in targets
