@@ -209,4 +209,4 @@ int main() {
 
 ### Kompilacja przykładów
 
-./Debug/nazwa_przykladu
+- ./Debug/nazwa_przykladu
