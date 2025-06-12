@@ -30,6 +30,26 @@ Biblioteka Numeryczna implementująca wybrane metody obliczeniowe numeryczne w j
 - **Metoda Rungego-Kutty 4. rzędu (RK4)**
 - Rozwiązywanie równań różniczkowych pierwszego rzędu
 - Zwracanie tablic wartości x i y
+- 
+### Rozwiązywanie równań nieliniowych
+Metoda bisekcji (połowienia przedziału)
+Stabilna i niezawodna metoda do znajdowania miejsc zerowych funkcji ciągłych na przedziale, w którym funkcja zmienia znak.
+
+Metoda siecznych
+Szybsza niż bisekcja, wykorzystuje liniową aproksymację funkcji za pomocą dwóch ostatnich punktów iteracji. Nie wymaga znajomości pochodnej.
+
+Metoda Newtona
+Bardzo szybka (kwadratowa zbieżność), wykorzystuje pierwszą pochodną funkcji. Zalecana dla funkcji gładkich i przy dobrej wartości początkowej.
+
+### Całkowanie numeryczne
+Metoda trapezów
+Prosty algorytm polegający na aproksymacji obszaru pod wykresem funkcji za pomocą trapezów.
+
+Metoda prostokątów (np. środków przedziałów)
+Oblicza pole powierzchni za pomocą prostokątów, których wysokość wyznaczana jest w środku każdego podprzedziału.
+
+Metoda Simpsona
+Dokładniejsza metoda wykorzystująca aproksymację funkcji wielomianem drugiego stopnia (parabolą).
 
 ## Instalacja
 
@@ -186,6 +206,20 @@ int main() {
 - `SinBasis(double frequency)` - funkcje sin(frequency * π * x)
 - `CosBasis(double frequency)` - funkcje cos(frequency * π * x)
 - `ExponentialBasis(double alpha)` - funkcje exp(alpha * x)
+- 
+### Rozwiązywanie równań nieliniowych
+
+std::vector<std::pair<double, double>> findSignChangeIntervals(...)
+
+Opis: Zwraca przedziały, gdzie funkcja zmienia znak.
+
+std::vector<double> removeDuplicates(...)
+
+Opis: Usuwa duplikaty pierwiastków według tolerancji.
+
+std::vector<double> findAllRoots(...)
+
+Opis: Znajduje wszystkie pierwiastki funkcji na przedziale z użyciem wybranej metody (Newton, sieczne, bisekcja).
 
 ### Rozwiązywanie równań różniczkowych
 
