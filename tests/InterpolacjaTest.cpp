@@ -24,7 +24,7 @@ bool runTest(const string& testName, void (*testFunction)()) {
         return false;
     }
     catch (const std::exception& e) {
-        cout << testName << " FAILED z nieoczekiwanym wyj¹tkiem: " << e.what() << endl;
+        cout << testName << " FAILED z nieoczekiwanym wyjï¿½tkiem: " << e.what() << endl;
         return false;
     }
 }
@@ -38,12 +38,12 @@ void InterpolationTest1() {
     for (int i = 0; i < x.size(); i++) {
         double result = numlib::Newton(x, coeffs, x[i]);
         assertTest(abs(result - y[i]) < 1e-10,
-            "B³¹d interpolacji w punkcie x = " + to_string(x[i]));
+            "Blad interpolacji w punkcie x = " + to_string(x[i]));
     }
 
     double result = numlib::Newton(x, coeffs, 0.5);
     assertTest(abs(result - 0.25) < 1e-10,
-        "B³¹d interpolacji w punkcie x = 0.5");
+        "Blad interpolacji w punkcie x = 0.5");
 }
 
 void InterpolationTest2() {
@@ -63,12 +63,12 @@ void InterpolationTest2() {
     double y_exact = 1.0 / (1.0 + 25.0 * x_test * x_test); 
     double y_interp = numlib::Newton(x, coeffs, x_test);   
 
-    cout << "Wartoœæ dok³adna w x = " << x_test << ": " << y_exact << endl;
-    cout << "Wartoœæ interpolowana: " << y_interp << endl;
-    cout << "B³¹d bezwzglêdny: " << abs(y_exact - y_interp) << endl;
+    cout << "Wartosc dokladna w x = " << x_test << ": " << y_exact << endl;
+    cout << "Wartosc interpolowana: " << y_interp << endl;
+    cout << "Blad bezwzgledny: " << abs(y_exact - y_interp) << endl;
 
     assertTest(abs(y_exact - y_interp) < 0.1,
-        "Interpolacja funkcji Rungego powinna dawaæ znacz¹cy b³¹d");
+        "Interpolacja funkcji Rungego powinna dawac znaczacy blad");
 }
 
 int main() {
@@ -82,8 +82,8 @@ int main() {
         passedTests++;
     }
     
-    cout << "\n=== Podsumowanie testów ===" << endl;
-    cout << "Przesz³o: " << passedTests << "/" << totalTests << endl;
+    cout << "\n=== Podsumowanie testï¿½w ===" << endl;
+    cout << "Przeszï¿½o: " << passedTests << "/" << totalTests << endl;
 
     return passedTests != totalTests;
 }
