@@ -18,6 +18,11 @@ target_include_directories(BibliotekaNumeryczna PUBLIC
     ${CMAKE_SOURCE_DIR}/include
 )
 
+add_executable(RownaniaRozniczkowePrzyklad examples/RownaniaRozniczkowePrzyklad.cpp)
+target_link_libraries(RownaniaRozniczkowePrzyklad BibliotekaNumeryczna)
+
+add_executable(AproksymacjaPrzyklad example/AproksymacjaPrzyklad.cpp)
+target_link_libraries(AproksymacjaPrzyklad PRIVATE BibliotekaNumeryczna)
 
 enable_testing()
 
@@ -46,7 +51,3 @@ add_test(NAME AproksymacjaTest COMMAND AproksymacjaTest)
 add_executable(CalkowanieTest tests/CalkowanieTest.cpp)
 target_link_libraries(CalkowanieTest PRIVATE BibliotekaNumeryczna)
 add_test(NAME CalkowanieTest COMMAND CalkowanieTest)
-
-add_executable(AproksymacjaPrzyklad example/AproksymacjaPrzyklad.cpp)
-target_link_libraries(AproksymacjaPrzyklad PRIVATE BibliotekaNumeryczna)
-
