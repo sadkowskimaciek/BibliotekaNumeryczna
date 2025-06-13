@@ -235,6 +235,55 @@ Opis: Znajduje wszystkie pierwiastki funkcji na przedziale z użyciem wybranej m
 
 **Zwraca**: Parę wektorów (x_values, y_values) zawierających rozwiązanie
 
+### Całkowanie numeryczne
+
+### double horner(const std::vector<double>& coefficients, double x)
+**Opis**: Oblicza wartość wielomianu w punkcie x używając schematu Hornera (funkcja pomocnicza).
+
+**Argumenty:**
+coefficients - wektor współczynników wielomianu [a₀, a₁, a₂, ...] dla wielomianu a₀ + a₁x + a₂x² + ...
+x - punkt, w którym obliczamy wartość wielomianu
+Zwraca: Wartość wielomianu w punkcie x
+
+### double rectangle_method(const std::vector<double>& coefficients, double a, double b, int n)
+**Opis**: Oblicza całkę oznaczoną wielomianu metodą prostokątów (lewych końców przedziałów).
+
+**Argumenty**:
+coefficients - wektor współczynników wielomianu
+a - dolna granica całkowania
+b - górna granica całkowania
+n - liczba podprzedziałów
+Zwraca: Przybliżona wartość całki
+
+### double trapezoid_method(const std::vector<double>& coefficients, double a, double b, int n)
+**Opis**: Oblicza całkę oznaczoną wielomianu metodą trapezów.
+
+*Argumenty**:
+coefficients - wektor współczynników wielomianu
+a - dolna granica całkowania
+b - górna granica całkowania
+n - liczba podprzedziałów
+Zwraca: Przybliżona wartość całki
+
+### double simpson_method(const std::vector<double>& coefficients, double a, double b, int n)
+**Opis**: Oblicza całkę oznaczoną wielomianu metodą Simpsona (reguła 1/3). Automatycznie zapewnia parzystą liczbę podprzedziałów.
+
+**Argumenty**:
+coefficients - wektor współczynników wielomianu
+a - dolna granica całkowania
+b - górna granica całkowania
+n - liczba podprzedziałów (zostanie zwiększona o 1 jeśli nieparzysta)
+Zwraca: Przybliżona wartość całki
+
+### double analytical_integral(const std::vector<double>& coefficients, double a, double b)
+**Opis**: Oblicza dokładną wartość całki oznaczonej wielomianu analitycznie.
+**Argumenty**:
+
+coefficients - wektor współczynników wielomianu
+a - dolna granica całkowania
+b - górna granica całkowania
+Zwraca: Dokładna wartość całki
+
 ## Testowanie
 
 ### Uruchomienie testów
